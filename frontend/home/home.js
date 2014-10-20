@@ -1,6 +1,7 @@
 angular.module( 'sample.home', [
   'ui.router',
-  'angular-storage'
+  'angular-storage',
+  'angular-jwt'
 ])
 .config(function($stateProvider) {
   $stateProvider.state('home', {
@@ -9,9 +10,10 @@ angular.module( 'sample.home', [
     templateUrl: 'home/home.html'
   });
 })
-.controller( 'HomeCtrl', function HomeController( $scope, $http, store) {
+.controller( 'HomeCtrl', function HomeController( $scope, $http, store, jwtHelper) {
 
   $scope.jwt = store.get('jwt');
+  $scope.decodedJwt = jwtHelper.decodeToken($scope.jwt);
 
   $scope.callAnonymousApi = function() {
     // Just call the API as you'd do using $http

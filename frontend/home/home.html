@@ -3,6 +3,7 @@
     <h1>Welcome to the ngEurope sample!</h1>
     <h2 ng-show="jwt">Your JWT is:</h2>
     <pre ng-show="jwt" class="jwt"><code>{{jwt}}</code></pre>
+    <pre ng-show="jwt" class="jwt"><code>{{decodedJwt | json}}</code></pre>
     <p>Click any of the buttons to call an API and get a response</p>
     <p><a class="btn btn-primary btn-lg" role="button" ng-click="callAnonymousApi()">Call Anonymous API</a></p>
     <p><a class="btn btn-primary btn-lg" role="button" ng-click="callSecuredApi()">Call Secure API</a></p>
