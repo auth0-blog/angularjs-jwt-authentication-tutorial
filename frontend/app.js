@@ -1,5 +1,7 @@
 angular.module( 'sample', [
-  'sample.home'
+  'sample.home',
+  'sample.login',
+  'sample.signup'
 ])
 .config( function myAppConfig ($urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
