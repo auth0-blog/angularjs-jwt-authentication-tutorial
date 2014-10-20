@@ -13,7 +13,7 @@ angular.module( 'sample.home', [
 .controller( 'HomeCtrl', function HomeController( $scope, $http, store, jwtHelper) {
 
   $scope.jwt = store.get('jwt');
-  $scope.decodedJwt = jwtHelper.decodeToken($scope.jwt);
+  $scope.decodedJwt = $scope.jwt && jwtHelper.decodeToken($scope.jwt);
 
   $scope.callAnonymousApi = function() {
     // Just call the API as you'd do using $http
