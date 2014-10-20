@@ -1,0 +1,13 @@
+<div class="home">
+  <div class="jumbotron centered">
+    <h1>Welcome to the ngEurope sample!</h1>
+    <p>Click any of the buttons to call an API and get a response</p>
+    <p><a class="btn btn-primary btn-lg" role="button" ng-click="callAnonymousApi()">Call Anonymous API</a></p>
+    <p><a class="btn btn-primary btn-lg" role="button" ng-click="callSecuredApi()">Call Secure API</a></p>
+    <h2 ng-show="response">The response of calling the <span class="red">{{api}}</span> API is:</h2>
+    <h3 ng-show="response">{{response}}</h3>
+  </div>
+
+
+
+</div>

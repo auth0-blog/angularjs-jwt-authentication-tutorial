@@ -15,4 +15,4 @@ libpeerconnection.log
 .DS_Store
 
 # Bower components
-bower
+vendor

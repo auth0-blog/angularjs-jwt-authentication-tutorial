@@ -32,7 +32,7 @@ if (process.env.NODE_ENV === 'development') {
 app.use(require('./anonymous-routes'));
 app.use(require('./protected-routes'));
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3001;
 
 http.createServer(app).listen(port, function (err) {
   console.log('listening in http://localhost:' + port);

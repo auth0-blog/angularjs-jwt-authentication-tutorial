@@ -12,7 +12,5 @@ var jwtCheck = jwt({
 app.use('/api/protected', jwtCheck);
 
 app.get('/api/protected/random-quote', function(req, res) {
-  res.status(200).send({
-    text: quoter.getRandomOne()
-  });
+  res.status(200).send(quoter.getRandomOne());
 });
