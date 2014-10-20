@@ -7,7 +7,10 @@ angular.module( 'sample.home', [
   $stateProvider.state('home', {
     url: '/',
     controller: 'HomeCtrl',
-    templateUrl: 'home/home.html'
+    templateUrl: 'home/home.html',
+    data: {
+      requiresLogin: true
+    }
   });
 })
 .controller( 'HomeCtrl', function HomeController( $scope, $http, store, jwtHelper) {
