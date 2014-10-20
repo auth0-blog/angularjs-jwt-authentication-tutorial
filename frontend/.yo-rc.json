@@ -1,0 +1,28 @@
+{
+  "generator-angularjs-gulp-library": {
+    "props": {
+      "author": {
+        "name": "Martin Gontovnikas",
+        "email": "martin@gon.to"
+      },
+      "libraryName": {
+        "original": "ngeurope",
+        "camelized": "ngeurope",
+        "dasherized": "ngeurope",
+        "slugified": "ngeurope",
+        "parts": [
+          "ngeurope"
+        ]
+      },
+      "includeModuleDirectives": false,
+      "includeModuleFilters": false,
+      "includeModuleServices": false,
+      "includeAngularModuleResource": false,
+      "includeAngularModuleCookies": false,
+      "includeAngularModuleSanitize": false,
+      "librarySrcDirectory": "src/ngeurope",
+      "libraryUnitTestDirectory": "test/unit/ngeurope",
+      "libraryUnitE2eDirectory": "test/e2e/ngeurope"
+    }
+  }
+}
