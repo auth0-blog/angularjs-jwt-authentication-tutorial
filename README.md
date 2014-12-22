@@ -11,6 +11,7 @@ This application has an AngularJS Frontend and a NodeJS backend
 In order to run the the AngularJS app, all you need to do is to start a server at that folder. I recommend using `serve` for that. Just run:
 
 * `npm install -g serve`
+* `bower install`
 * `serve`
 
 Then go to [http://localhost:3000](http://localhost:3000) and see the Frontend app running
