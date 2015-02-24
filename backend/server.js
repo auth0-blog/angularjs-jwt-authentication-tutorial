@@ -12,7 +12,10 @@ var app = express();
 dotenv.load();
 
 // Parsers
-app.use(bodyParser.urlencoded());
+// old version of line
+// app.use(bodyParser.urlencoded());
+// new version of line
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
