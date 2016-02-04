@@ -60,3 +60,15 @@ Now, before logging in, try going to [http://localhost:3000/#/](http://localhost
 ### 5 - Restrict access to routes
 
 In this section, we've restricted access to routes that require authentintication for anonymous users. Go to [http://localhost:3000/#/](http://localhost:3000/#/) without being logged in and you'll see that you're redirected to the Login page. You can see the implementation for that [here](https://github.com/auth0/ngeurope-demo/blob/5-restrict-access-to-routes/frontend/app.js#L18-L25).
+
+## Issue Reporting
+
+If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://auth0.com/whitehat) details the procedure for disclosing security issues.
+
+## Author
+
+[Auth0](auth0.com)
+
+## License
+
+This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
